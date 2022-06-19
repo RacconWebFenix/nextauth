@@ -34,7 +34,7 @@ export function signOut() {
 }
 
 export function AuthProvider({ children }: AuthProviderProps) {
-  const [user, setUser] = useState<User>({} as User);
+  const [user, setUser] = useState<User>();
 
   const isAuthenticated = !!user;
 
